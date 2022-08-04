@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Pointeger\CustomApi\Api\ProductRepositoryInterface"
+                type="Pointeger\CustomApi\Model\Api\ProductRepository"/>
+    <preference for="Pointeger\CustomApi\Api\RequestItemInterface"
+                type="Pointeger\CustomApi\Model\Api\RequestItem"/>
+    <preference for="Pointeger\CustomApi\Api\ResponseItemInterface"
+                type="Pointeger\CustomApi\Model\Api\ResponseItem"/>
+</config>

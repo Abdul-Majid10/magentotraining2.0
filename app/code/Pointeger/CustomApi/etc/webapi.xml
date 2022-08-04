@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/pointeger/customapi/getproduct/:id" method="GET">
+        <service class="Pointeger\CustomApi\Api\ProductRepositoryInterface" method="getItem"/>
+        <resources>
+            <!--            <resource ref="Pointeger_CustomApi::products_get"/>-->
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/pointeger/customapi/setDescription" method="PUT">
+        <service class="Pointeger\CustomApi\Api\ProductRepositoryInterface" method="setDescription"/>
+        <resources>
+            <resource ref="anonymous"/>
+            <!--            <resource ref="Pointeger_CustomApi::products_set_description"/>-->
+        </resources>
+    </route>
+</routes>
